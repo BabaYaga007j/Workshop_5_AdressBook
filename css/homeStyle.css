@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(-45deg, rgba(130, 41, 130, 0.067), #e92de6, #fa2a35, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.header {
+    padding: 15px 0;
+    background-color: #ffffff;
+    background:transparent;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 0px solid rgb(0, 162, 255);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    background-color: #bfd8ef;
+    background: transparent;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+
+.address-book-text {
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+.person-count {
+    background-color: #0084ff00;
+    color: #000000;
+    border-radius: 50%;
+    width: 26px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+.add-button {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #0000007c 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    animation: wiggle 2.5s linear infinite;
+}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+
+.table {
+    width: 80%;
+    margin: 10%;
+    margin-top: 3px;
+    min-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    border: 0px solid #0084ff;
+}
+
+td,th {
+    text-align: center;
+    padding: 5px 8px;
+}
+
+th {
+    background: #0084ff00 2% 2% no-repeat padding-box;
+    text-align: center;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing:  0px;
+    color: #f4f4f4;
+    opacity: 1;
+    padding: 10px;
+    border: 2px solid #030202;
+    padding-bottom: 6px;
+}
+
+tr:not(:first-child) {
+    background: #ffffff;
+    border: 1px solid#e3e3e3;
+}
+
+td {
+    text-align: center;
+    font-size:11px;
+    padding: 10px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    border: px solid gainsboro;
+}
+
+td img {
+    cursor: pointer;
+}
